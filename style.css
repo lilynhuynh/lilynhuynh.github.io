@@ -1,0 +1,27 @@
+/* Press Start 2P */
+@import url('https://fonts.google.com/specimen/Press+Start+2P');
+
+body {
+    font-family: 'Press';
+    background-color: #FBECB2;
+}
+
+.speech {
+    color: #5272F2;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    top: 30%;
+}
+
+.sprite {
+    width: 490px;
+    bottom: 10%;
+}
+
+.ground {
+    background-color: #072541;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+}
