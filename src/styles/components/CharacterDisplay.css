@@ -1,0 +1,44 @@
+.char_block {
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+  margin: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+}
+
+.char_block img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .char_block {
+    bottom: 65px;
+  }
+
+  .char_block img {
+    width: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .char_block {
+    bottom: 30px;
+  }
+
+  .char_block img {
+    width: 168px;
+  }
+}
+
+/* Large displays */
+@media (min-width: 1440px) {
+  .char_block img {
+    width: 400px;
+  }
+}
