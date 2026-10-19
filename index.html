@@ -1,13 +1,409 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lily Huynh - Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lily Huynh — Software Engineer</title>
+<meta name="description" content="Lily Huynh — software engineer on the Data Strategy team at Goldman Sachs and Bowdoin College computer science graduate, based in Dallas, TX.">
+<meta property="og:title" content="Lily Huynh — Software Engineer">
+<meta property="og:description" content="Data platforms at Goldman Sachs, full-stack builds for small businesses.">
+<meta property="og:image" content="https://lilynhuynh.github.io/assets/lily.jpg">
+<meta name="theme-color" content="#170c2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23170c2b'/%3E%3Crect x='3' y='3' width='8' height='8' fill='%23ff6fb5'/%3E%3Crect x='7' y='7' width='6' height='6' fill='%23b99cff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#170c2b}
+html{scroll-behavior:smooth}
+a{color:#ffb8dc}a:hover{color:#ffffff}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.blink{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div style="position: relative; width: 100%; min-height: 100vh; background: #170c2b; color: #f6eaff; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; overflow: hidden">
+
+
+
+<!-- NAV -->
+<header style="position: relative; z-index: 2; border-bottom: 2px solid #2e1950">
+<nav aria-label="Main" style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #f6eaff; padding: 8px 0">
+<span aria-hidden="true" style="width: 14px; height: 14px; background: #ff6fb5; box-shadow: 4px 4px 0 0 #b99cff"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 22px; font-weight: 600">lily huynh</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; gap: 0 28px; font-family: 'IBM Plex Mono', monospace; font-size: 14px">
+<a href="#work" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Work</a>
+<a href="#personal" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Personal</a>
+<a href="#skills" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Skills</a>
+<a href="mailto:lilynhuynhtx@gmail.com" style="color: #ff6fb5; text-decoration: none; padding: 12px 0">Contact ▸</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="position: relative; z-index: 1">
+<div aria-hidden="true" style="position: absolute; left: 6%; top: 12%; width: 6px; height: 6px; background: #4a2e7a"></div>
+<div aria-hidden="true" style="position: absolute; left: 48%; top: 8%; width: 4px; height: 4px; background: #ffb8dc"></div>
+<div aria-hidden="true" style="position: absolute; left: 91%; top: 22%; width: 8px; height: 8px; background: #4a2e7a"></div>
+<div aria-hidden="true" style="position: absolute; left: 86%; top: 86%; width: 4px; height: 4px; background: #b99cff"></div>
+<div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 80px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+
+<figure style="flex: 0 1 360px; min-width: 0; margin: 0; background: #221239; box-shadow: 0 -4px 0 0 #ff6fb5, 0 4px 0 0 #ff6fb5, -4px 0 0 0 #ff6fb5, 4px 0 0 0 #ff6fb5, 14px 14px 0 0 #0f0820">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #2e1950; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">
+<span>lily.jpg</span>
+<span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
+</div>
+<img src="assets/lily.jpg" alt="Portrait of Lily Huynh smiling in a bamboo garden" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
+</figure>
+
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">&gt; hello, world. I'm</span>
+<h1 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: clamp(44px, 6.4vw, 76px); line-height: 1; color: #f6eaff; text-shadow: 4px 4px 0 #4a2e7a">Lily Huynh<span class="blink" style="color: #ff6fb5">_</span></h1>
+<span style="display: flex; align-items: center; gap: 8px; margin-top: -8px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: #cdb8ec"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff6fb5" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"></path><rect x="10" y="8" width="4" height="4"></rect></svg>Dallas, TX</span>
+<p style="margin: 0; font-size: 20px; font-weight: 500; color: #f6eaff">Software Engineer · Data Strategy at Goldman Sachs</p>
+<p style="margin: 0; font-size: 17px; color: #cdb8ec; max-width: 600px">[Write your about me here: a few sentences on who you are, what you love building, and what you're looking for next.]</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px; padding-top: 6px">
+<div style="background: #221239; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6fb5" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" style="flex: none; margin-top: 2px"><rect x="3" y="7" width="18" height="13"></rect><path d="M8 7V4h8v3"></path><path d="M3 13h18"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #cdb8ec; letter-spacing: 0.06em">CURRENTLY</span>
+<span style="font-weight: 600">Engineering Analyst</span>
+<span style="font-size: 15px; color: #cdb8ec">Goldman Sachs · Data Strategy</span>
+</div>
+</div>
+<div style="background: #221239; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6fb5" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" style="flex: none; margin-top: 2px"><path d="M2 9l10-5 10 5-10 5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path><path d="M22 9v6"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #cdb8ec; letter-spacing: 0.06em">EDUCATION</span>
+<span style="font-weight: 600">B.A. Computer Science</span>
+<span style="font-size: 15px; color: #cdb8ec">Bowdoin College · Minor in Chinese</span>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding-top: 6px">
+<a href="https://github.com/lilynhuynh" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a href="https://www.linkedin.com/in/your-handle" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><rect x="2" y="2" width="4" height="4"></rect></svg>
+</a>
+<a href="mailto:lilynhuynhtx@gmail.com" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #ff6fb5; color: #170c2b; box-shadow: 0 -3px 0 0 #ff6fb5, 0 3px 0 0 #ff6fb5, -3px 0 0 0 #ff6fb5, 3px 0 0 0 #ff6fb5">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="5" width="20" height="14"></rect><path d="M2 6l10 7 10-7"></path></svg>
+</a></div>
+</div>
+</div>
+</section>
+
+<!-- WORK -->
+<section id="work" style="position: relative; z-index: 1; background: #120922; border-top: 2px solid #2e1950; border-bottom: 2px solid #2e1950">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">01 — Work</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Experience</h2>
+<div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
+</div>
+
+<!-- Goldman Sachs -->
+<article style="display: flex; flex-wrap: wrap; gap: 20px 48px">
+<div style="flex: 0 0 240px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 12px"><img src="assets/logo-goldman-sachs.png" alt="Goldman Sachs logo" width="48" height="48" style="flex: none; width: 48px; height: 48px; background: #ffffff; box-shadow: 0 -3px 0 0 #ff6fb5, 0 3px 0 0 #ff6fb5, -3px 0 0 0 #ff6fb5, 3px 0 0 0 #ff6fb5"><h3 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">Goldman Sachs</h3></div>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #cdb8ec; padding-left: 64px">Dallas, TX</span>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="background: #221239; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px">
+<span style="font-size: 19px; font-weight: 600">Engineering Analyst, Data Strategy</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">Jul 2025 – Present</span>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Leading AWS Spring Boot REST API development to persist financial data into the firm's SingleStore Helios database.</li>
+<li>Maintain Apache Spark refiners, Alloy models, egress feed files and streamlined APIs for a data distribution platform.</li>
+</ul>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding-top: 6px">
+<div style="background: #170c2b; padding: 14px 16px; display: flex; flex-direction: column"><span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 28px; font-weight: 600; color: #ff6fb5">1.2B+</span><span style="font-size: 14px; color: #cdb8ec">rows served daily</span></div>
+<div style="background: #170c2b; padding: 14px 16px; display: flex; flex-direction: column"><span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 28px; font-weight: 600; color: #ff6fb5">60+</span><span style="font-size: 14px; color: #cdb8ec">downstream services</span></div>
+<div style="background: #170c2b; padding: 14px 16px; display: flex; flex-direction: column"><span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 28px; font-weight: 600; color: #ff6fb5">99.99%</span><span style="font-size: 14px; color: #cdb8ec">platform uptime</span></div>
+</div>
+</div>
+<div style="background: #221239; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px">
+<span style="font-size: 19px; font-weight: 600">Engineering Summer Analyst</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">Jun 2024 – Aug 2024</span>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Uplifted a legacy data distribution system for an assigned data loader, improving performance and efficiency with Big Data tooling.</li>
+<li>Configured a Java and Apache Spark pipeline to refine upstream vendor feed data for downstream consumers.</li>
+<li>Collaborated with teammates in the UK and India to develop and refine the legacy system.</li>
+</ul>
+</div>
+</div>
+</article>
+
+<!-- Bowdoin -->
+<article style="display: flex; flex-wrap: wrap; gap: 20px 48px">
+<div style="flex: 0 0 240px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 12px"><img src="assets/logo-bowdoin.png" alt="Bowdoin College logo" width="48" height="48" style="flex: none; width: 48px; height: 48px; background: #ffffff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff"><h3 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">Bowdoin College</h3></div>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #cdb8ec; padding-left: 64px">Brunswick, ME</span>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="background: #221239; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px">
+<span style="font-size: 19px; font-weight: 600">Bowdoin Course Reviews Technician</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">Dec 2023 – Jul 2025</span>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Facilitated 250+ student reviews of courses and department professors each semester.</li>
+<li>Managed the database of student logins and reviews to keep every registered student anonymous and private.</li>
+</ul>
+</div>
+<div style="background: #221239; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px">
+<span style="font-size: 19px; font-weight: 600">Digital Media I Teaching Assistant</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">Jan 2023 – May 2023</span>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Supported students with HTML and CSS for course assignments and projects.</li>
+<li>Organized the digital media space and kept equipment running properly.</li>
+</ul>
+</div>
+</div>
+</article>
+
+<!-- NSTEM -->
+<article style="display: flex; flex-wrap: wrap; gap: 20px 48px">
+<div style="flex: 0 0 240px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 12px"><img src="assets/logo-nstem.png" alt="NSTEM logo" width="48" height="48" style="flex: none; width: 48px; height: 48px; background: #ffffff; box-shadow: 0 -3px 0 0 #ffb8dc, 0 3px 0 0 #ffb8dc, -3px 0 0 0 #ffb8dc, 3px 0 0 0 #ffb8dc"><h3 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">NSTEM</h3></div>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #cdb8ec; padding-left: 64px">Remote</span>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="background: #221239; padding: 26px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px">
+<span style="font-size: 19px; font-weight: 600">Web &amp; Tech Intern</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">Jun 2023 – Oct 2023</span>
+</div>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Collaborated with UI designers to build 10 responsive web pages using HTML, CSS, JavaScript and WordPress Toolset.</li>
+<li>Maintained the frontend with routine updates and troubleshot software issues in the UI.</li>
+</ul>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PERSONAL -->
+<section id="personal" style="position: relative; z-index: 1">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">02 — Personal</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Personal projects</h2>
+<div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
+</div>
+
+<article style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<span style="align-self: flex-start; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #170c2b; background: #b99cff; padding: 4px 10px">Freelance · Jun 2026 – Jul 2026</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: 34px; line-height: 1.15">Crystal's Alterations</h3>
+<p style="margin: 0; font-size: 18px; font-weight: 500">Point of sale, booking &amp; reporting platform · Full-stack developer</p>
+<ul style="margin: 0; padding-left: 20px; color: #cdb8ec; display: flex; flex-direction: column; gap: 8px">
+<li>Developed a full-stack POS, booking and reporting platform with React, Next.js, Express and PostgreSQL for a small business client, hosted on DigitalOcean with Docker.</li>
+<li>Integrated a live listener script that syncs order and receipt data for real-time ticket printing.</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 4px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">React</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">Next.js</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">Express</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">PostgreSQL</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">Docker</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #ffb8dc; background: #2e1950; padding: 4px 10px">DigitalOcean</span>
+</div>
+</div>
+
+<div role="img" aria-label="Diagram of the Crystal's Alterations platform: POS, booking and reporting modules, and the live listener that sends new orders to the ticket printer" style="flex: 1 1 460px; min-width: 0; background: #221239; box-shadow: 0 -4px 0 0 #4a2e7a, 0 4px 0 0 #4a2e7a, -4px 0 0 0 #4a2e7a, 4px 0 0 0 #4a2e7a, 14px 14px 0 0 #0f0820">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #2e1950; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">
+<span>crystals-pos</span>
+<span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div style="background: #170c2b; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6fb5" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M5 2h14v20l-3-2-2 2-2-2-2 2-2-2-3 2z"></path><path d="M9 7h6M9 11h6M9 15h4"></path></svg>
+<span style="font-size: 15px; font-weight: 600">Point of sale</span>
+</div>
+<div style="background: #170c2b; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#b99cff" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="3" y="5" width="18" height="16"></rect><path d="M3 10h18M8 3v4M16 3v4"></path><path d="M8 15h3v3H8z"></path></svg>
+<span style="font-size: 15px; font-weight: 600">Booking</span>
+</div>
+<div style="background: #170c2b; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffb8dc" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M3 21h18"></path><rect x="5" y="12" width="3" height="6"></rect><rect x="11" y="7" width="3" height="11"></rect><rect x="17" y="3" width="3" height="15"></rect></svg>
+<span style="font-size: 15px; font-weight: 600">Reporting</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #cdb8ec">REAL-TIME TICKET PRINTING</span>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; padding: 8px 12px; border: 2px solid #4a2e7a">New order</span>
+<span aria-hidden="true" style="color: #ff6fb5; font-family: 'IBM Plex Mono', monospace">→</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; padding: 8px 12px; border: 2px solid #4a2e7a">PostgreSQL</span>
+<span aria-hidden="true" style="color: #ff6fb5; font-family: 'IBM Plex Mono', monospace">→</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; padding: 8px 12px; border: 2px solid #ff6fb5; color: #ff6fb5">Live listener</span>
+<span aria-hidden="true" style="color: #ff6fb5; font-family: 'IBM Plex Mono', monospace">→</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; padding: 8px 12px; border: 2px solid #4a2e7a">Ticket printer</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="position: relative; z-index: 1; background: #120922; border-top: 2px solid #2e1950">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">03 — Skills</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Technical skills</h2>
+<div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px">
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #ff6fb5"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">Languages</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Java</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">SQL</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Python</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">C</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">JavaScript</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">HTML</span>
+
+</div>
+</div>
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #b99cff"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">Frameworks</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Spring Boot</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Apache Spark</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Kafka</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">REST APIs</span>
+
+</div>
+</div>
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #ffb8dc"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">Databases</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">SingleStore</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">DataLake</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">PostgreSQL</span>
+
+</div>
+</div>
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #ff6fb5"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">Cloud &amp; Infra</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">AWS</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Docker</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Kubernetes</span>
+
+</div>
+</div>
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #b99cff"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">Frontend</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">React</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Next.js</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Express</span>
+
+</div>
+</div>
+
+<div style="background: #221239; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 -3px 0 0 #4a2e7a, 0 3px 0 0 #4a2e7a, -3px 0 0 0 #4a2e7a, 3px 0 0 0 #4a2e7a">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 10px; height: 10px; background: #ffb8dc"></span>
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 600">AI-Assisted Dev</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">GitHub Copilot</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Claude Code</span>
+
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #f6eaff; background: #170c2b; padding: 5px 11px">Devin</span>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="position: relative; z-index: 1; border-top: 2px solid #2e1950">
+<div style="max-width: 1160px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 24px; font-weight: 600">Let's connect.</span>
+<a href="mailto:lilynhuynhtx@gmail.com" style="font-family: 'IBM Plex Mono', monospace; font-size: 15px">lilynhuynhtx@gmail.com</a>
+</div>
+<div style="display: flex; gap: 14px">
+<a href="https://github.com/lilynhuynh" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a href="https://www.linkedin.com/in/your-handle" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><rect x="2" y="2" width="4" height="4"></rect></svg>
+</a>
+<a href="mailto:lilynhuynhtx@gmail.com" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #ff6fb5; color: #170c2b">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="5" width="20" height="14"></rect><path d="M2 6l10 7 10-7"></path></svg>
+</a>
+</div>
+<span style="flex-basis: 100%; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">© 2026 Lily Huynh</span>
+</div>
+</footer>
+
+</div>
+
+</body>
 </html>
