@@ -25,7 +25,8 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 .sticker{position:absolute;z-index:3;height:auto;filter:drop-shadow(0 6px 0 rgba(12,6,25,.55));transition:transform .2s ease}
 .sticker:hover{transform:rotate(0deg) scale(1.06) !important}
-@media (max-width:700px){.sticker{width:96px !important}.sticker-hero{left:-12px !important;bottom:-40px !important}.sticker-pos{right:-6px !important;top:-52px !important}}
+.sticker.sticker-inline{position:relative;flex:none}
+@media (max-width:700px){.sticker{width:96px !important}.sticker-hero{width:132px !important;left:-12px !important;bottom:-44px !important}.sticker-wide{width:150px !important}.sticker-corner{top:0 !important}.sticker.sticker-inline{margin:4px 0 0 !important}}
 @media (prefers-reduced-motion: reduce){.lift,.sticker{transition:none}.nav-link:hover,.text-link:hover,.icon-btn:hover,.sticker:hover{transform:none !important}}
 @media (prefers-reduced-motion: reduce){.blink{animation:none}html{scroll-behavior:auto}}
 </style>
@@ -66,7 +67,7 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
 </div>
 <img src="assets/lily.jpg" alt="Portrait of Lily Huynh smiling in a bamboo garden" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
-<img class="sticker sticker-hero" src="assets/dog-harness.webp" alt="Lily\'s dachshund lying on his back in an orange harness" width="150" style="width: 150px; left: -62px; bottom: -54px; transform: rotate(-8deg)">
+<img class="sticker sticker-hero" src="assets/dog-duo.webp" alt="Lily's two dachshunds, a cream pup with his tongue out next to a red pup" width="172" style="width: 172px; left: -44px; bottom: -60px; transform: rotate(-7deg)">
 </figure>
 
 <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
@@ -115,8 +116,9 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <!-- WORK -->
 <section id="work" style="position: relative; z-index: 1; background: #120922; border-top: 2px solid #2e1950; border-bottom: 2px solid #2e1950">
 <div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">01 — Work</span>
+<img class="sticker sticker-corner" src="assets/dog-harness.webp" alt="Lily's red dachshund lying on his back in an orange harness" width="140" style="width: 140px; right: 0px; top: -24px; transform: rotate(8deg)">
 <h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Experience</h2>
 <div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
 </div>
@@ -214,7 +216,10 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">02 — Personal</span>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px">
 <h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Personal projects</h2>
+<img class="sticker sticker-inline" src="assets/dog-cream.webp" alt="Lily's cream dachshund tilting his head" width="118" style="width: 118px; margin: -24px 0; transform: rotate(-6deg)">
+</div>
 <div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
 </div>
 
@@ -240,7 +245,6 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <div role="img" aria-label="Diagram of the Crystal's Alterations platform: POS, booking and reporting modules, and the live listener that sends new orders to the ticket printer" style="position: relative; flex: 1 1 460px; min-width: 0; background: #221239; box-shadow: 0 -4px 0 0 #4a2e7a, 0 4px 0 0 #4a2e7a, -4px 0 0 0 #4a2e7a, 4px 0 0 0 #4a2e7a, 14px 14px 0 0 #0f0820">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #2e1950; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">
 <span>crystals-pos</span>
-<img class="sticker sticker-pos" src="assets/dog-cream.webp" alt="" aria-hidden="true" width="140" style="width: 140px; top: -64px; right: -34px; transform: rotate(9deg)">
 <span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
 </div>
 <div style="padding: 24px; display: flex; flex-direction: column; gap: 22px">
@@ -279,8 +283,9 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <!-- SKILLS -->
 <section id="skills" style="position: relative; z-index: 1; background: #120922; border-top: 2px solid #2e1950">
 <div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #ff6fb5">03 — Skills</span>
+<img class="sticker sticker-corner" src="assets/dog-nose.webp" alt="Lily's red dachshund pressing his nose up to the camera" width="124" style="width: 124px; right: 8px; top: -18px; transform: rotate(6deg)">
 <h2 style="margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 44px); line-height: 1.15">Technical skills</h2>
 <div aria-hidden="true" style="width: 120px; height: 4px; background: repeating-linear-gradient(90deg, #ff6fb5 0px, #ff6fb5 8px, transparent 8px, transparent 12px)"></div>
 </div>
@@ -399,7 +404,7 @@ a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
 <div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 4px">
 <span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 24px; font-weight: 600">Let's connect.</span>
-<img class="sticker" src="assets/dog-nose.webp" alt="Lily's dachshund pressing his nose up to the camera" width="118" style="width: 118px; right: 200px; top: -64px; transform: rotate(-6deg)">
+<img class="sticker sticker-wide" src="assets/dog-sleepy.webp" alt="Lily's cream dachshund napping on the couch" width="200" style="width: 200px; left: 20px; top: -62px; transform: rotate(-3deg)">
 <a href="mailto:lilynhuynhtx@gmail.com" class="text-link lift" style="display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 15px">lilynhuynhtx@gmail.com</a>
 </div>
 <div style="display: flex; gap: 14px">
