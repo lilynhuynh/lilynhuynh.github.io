@@ -19,6 +19,14 @@ html{scroll-behavior:smooth}
 a{color:#ffb8dc}a:hover{color:#ffffff}
 .blink{animation:blink 1.1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
+.lift{transition:transform .16s ease,color .16s ease,box-shadow .16s ease}
+.nav-link:hover,.nav-link:focus-visible,.nav-link:active,.text-link:hover,.text-link:focus-visible,.text-link:active{color:#ff6fb5 !important;transform:translateY(-2px)}
+.icon-btn:hover,.icon-btn:focus-visible,.icon-btn:active{color:#ff6fb5 !important;transform:translateY(-3px);box-shadow:0 -3px 0 0 #ff6fb5,0 3px 0 0 #ff6fb5,-3px 0 0 0 #ff6fb5,3px 0 0 0 #ff6fb5 !important}
+a:focus-visible{outline:2px dashed #ff6fb5;outline-offset:4px}
+.sticker{position:absolute;z-index:3;height:auto;filter:drop-shadow(0 6px 0 rgba(12,6,25,.55));transition:transform .2s ease}
+.sticker:hover{transform:rotate(0deg) scale(1.06) !important}
+@media (max-width:700px){.sticker{width:96px !important}.sticker-hero{left:-12px !important;bottom:-40px !important}.sticker-pos{right:-6px !important;top:-52px !important}}
+@media (prefers-reduced-motion: reduce){.lift,.sticker{transition:none}.nav-link:hover,.text-link:hover,.icon-btn:hover,.sticker:hover{transform:none !important}}
 @media (prefers-reduced-motion: reduce){.blink{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -31,15 +39,15 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 <!-- NAV -->
 <header style="position: relative; z-index: 2; border-bottom: 2px solid #2e1950">
 <nav aria-label="Main" style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
-<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #f6eaff; padding: 8px 0">
+<a href="#top" class="nav-link lift" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #f6eaff; padding: 8px 0">
 <span aria-hidden="true" style="width: 14px; height: 14px; background: #ff6fb5; box-shadow: 4px 4px 0 0 #b99cff"></span>
 <span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 22px; font-weight: 600">lily huynh</span>
 </a>
 <div style="display: flex; flex-wrap: wrap; gap: 0 28px; font-family: 'IBM Plex Mono', monospace; font-size: 14px">
-<a href="#work" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Work</a>
-<a href="#personal" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Personal</a>
-<a href="#skills" style="color: #cdb8ec; text-decoration: none; padding: 12px 0">Skills</a>
-<a href="mailto:lilynhuynhtx@gmail.com" style="color: #ff6fb5; text-decoration: none; padding: 12px 0">Contact ▸</a>
+<a href="#work" class="nav-link lift" style="display: inline-block; color: #cdb8ec; text-decoration: none; padding: 12px 0">Work</a>
+<a href="#personal" class="nav-link lift" style="display: inline-block; color: #cdb8ec; text-decoration: none; padding: 12px 0">Personal</a>
+<a href="#skills" class="nav-link lift" style="display: inline-block; color: #cdb8ec; text-decoration: none; padding: 12px 0">Skills</a>
+<a href="mailto:lilynhuynhtx@gmail.com" class="nav-link lift" style="display: inline-block; color: #cdb8ec; text-decoration: none; padding: 12px 0">Contact ▸</a>
 </div>
 </nav>
 </header>
@@ -52,12 +60,13 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 <div aria-hidden="true" style="position: absolute; left: 86%; top: 86%; width: 4px; height: 4px; background: #b99cff"></div>
 <div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 80px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
 
-<figure style="flex: 0 1 360px; min-width: 0; margin: 0; background: #221239; box-shadow: 0 -4px 0 0 #ff6fb5, 0 4px 0 0 #ff6fb5, -4px 0 0 0 #ff6fb5, 4px 0 0 0 #ff6fb5, 14px 14px 0 0 #0f0820">
+<figure style="position: relative; flex: 0 1 360px; min-width: 0; margin: 0; background: #221239; box-shadow: 0 -4px 0 0 #ff6fb5, 0 4px 0 0 #ff6fb5, -4px 0 0 0 #ff6fb5, 4px 0 0 0 #ff6fb5, 14px 14px 0 0 #0f0820">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #2e1950; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">
 <span>lily.jpg</span>
 <span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
 </div>
 <img src="assets/lily.jpg" alt="Portrait of Lily Huynh smiling in a bamboo garden" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
+<img class="sticker sticker-hero" src="assets/dog-harness.webp" alt="Lily\'s dachshund lying on his back in an orange harness" width="150" style="width: 150px; left: -62px; bottom: -54px; transform: rotate(-8deg)">
 </figure>
 
 <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
@@ -67,6 +76,7 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 <p style="margin: 0; font-size: 20px; font-weight: 500; color: #f6eaff">Software Engineer · Data Strategy at Goldman Sachs</p>
 <p style="margin: 0; font-size: 17px; color: #cdb8ec; max-width: 600px">
     I'm a software engineer at Goldman Sachs on the Data Strategy team to create and maintain data distribution services to solve fintech problems.
+    Feel free to connect, I love connecting with people to learn more about their backgrounds, experiences, and expertise!
 </p>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px; padding-top: 6px">
@@ -89,13 +99,13 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 </div>
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding-top: 6px">
-<a href="https://github.com/lilynhuynh" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
+<a href="https://github.com/lilynhuynh" class="icon-btn lift" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 </a>
-<a href="https://www.linkedin.com/in/lily-nhuynh/" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
+<a href="https://www.linkedin.com/in/lily-nhuynh/" class="icon-btn lift" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><rect x="2" y="2" width="4" height="4"></rect></svg>
 </a>
-<a href="mailto:lilynhuynhtx@gmail.com" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
+<a href="mailto:lilynhuynhtx@gmail.com" class="icon-btn lift" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff; box-shadow: 0 -3px 0 0 #b99cff, 0 3px 0 0 #b99cff, -3px 0 0 0 #b99cff, 3px 0 0 0 #b99cff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="5" width="20" height="14"></rect><path d="M2 6l10 7 10-7"></path></svg>
 </a></div>
 </div>
@@ -227,9 +237,10 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 </div>
 </div>
 
-<div role="img" aria-label="Diagram of the Crystal's Alterations platform: POS, booking and reporting modules, and the live listener that sends new orders to the ticket printer" style="flex: 1 1 460px; min-width: 0; background: #221239; box-shadow: 0 -4px 0 0 #4a2e7a, 0 4px 0 0 #4a2e7a, -4px 0 0 0 #4a2e7a, 4px 0 0 0 #4a2e7a, 14px 14px 0 0 #0f0820">
+<div role="img" aria-label="Diagram of the Crystal's Alterations platform: POS, booking and reporting modules, and the live listener that sends new orders to the ticket printer" style="position: relative; flex: 1 1 460px; min-width: 0; background: #221239; box-shadow: 0 -4px 0 0 #4a2e7a, 0 4px 0 0 #4a2e7a, -4px 0 0 0 #4a2e7a, 4px 0 0 0 #4a2e7a, 14px 14px 0 0 #0f0820">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #2e1950; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #cdb8ec">
 <span>crystals-pos</span>
+<img class="sticker sticker-pos" src="assets/dog-cream.webp" alt="" aria-hidden="true" width="140" style="width: 140px; top: -64px; right: -34px; transform: rotate(9deg)">
 <span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; background: #b99cff"></span><span style="width: 10px; height: 10px; background: #ffb8dc"></span><span style="width: 10px; height: 10px; background: #ff6fb5"></span></span>
 </div>
 <div style="padding: 24px; display: flex; flex-direction: column; gap: 22px">
@@ -385,19 +396,20 @@ a{color:#ffb8dc}a:hover{color:#ffffff}
 
 <!-- FOOTER -->
 <footer style="position: relative; z-index: 1; border-top: 2px solid #2e1950">
-<div style="max-width: 1160px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 4px">
 <span style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 24px; font-weight: 600">Let's connect.</span>
-<a href="mailto:lilynhuynhtx@gmail.com" style="font-family: 'IBM Plex Mono', monospace; font-size: 15px">lilynhuynhtx@gmail.com</a>
+<img class="sticker" src="assets/dog-nose.webp" alt="Lily's dachshund pressing his nose up to the camera" width="118" style="width: 118px; right: 200px; top: -64px; transform: rotate(-6deg)">
+<a href="mailto:lilynhuynhtx@gmail.com" class="text-link lift" style="display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 15px">lilynhuynhtx@gmail.com</a>
 </div>
 <div style="display: flex; gap: 14px">
-<a href="https://github.com/lilynhuynh" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
+<a href="https://github.com/lilynhuynh" class="icon-btn lift" aria-label="GitHub" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 </a>
-<a href="https://www.linkedin.com/in/your-handle" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
+<a href="https://www.linkedin.com/in/lily-nhuynh/" class="icon-btn lift" aria-label="LinkedIn" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><rect x="2" y="2" width="4" height="4"></rect></svg>
 </a>
-<a href="mailto:lilynhuynhtx@gmail.com" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
+<a href="mailto:lilynhuynhtx@gmail.com" class="icon-btn lift" aria-label="Email" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #2e1950; color: #f6eaff">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="5" width="20" height="14"></rect><path d="M2 6l10 7 10-7"></path></svg>
 </a>
 </div>
